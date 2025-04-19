@@ -1,0 +1,27 @@
+footer {
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #1f8036;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin: 15px 0;
+    border: 1px solid #c3e6cb;
+    text-align: center;
+}
+
+.error-login {
+    background-color: #d4e3ed;
+    color: #8b2020;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin: 15px 0;
+    border: 1px solid #c3e6cb;
+    text-align: center;
+}
