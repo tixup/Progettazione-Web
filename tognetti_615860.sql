@@ -41,7 +41,6 @@ CREATE TABLE recensioni (
     id_utente INT NOT NULL,
     id_sala INT NOT NULL,
     voto INT CHECK (voto BETWEEN 1 AND 5),
-    commento TEXT,
     data_recensione DATETIME DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (id_utente) REFERENCES utenti(id),
     FOREIGN KEY (id_sala) REFERENCES sale(id)
