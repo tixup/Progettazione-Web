@@ -54,6 +54,7 @@ try {
                     <p><strong>Username:</strong> <?= htmlspecialchars($user['username']) ?></p>
                     <p><strong>Email:</strong> <?= htmlspecialchars($user['email']) ?></p>
                     <a href="mie_prenotazioni.php" class="btn">Le mie prenotazioni</a>
+                    <a href="recensioni.php" class="btn">Recensioni</a> <br>
                     <a href="logout.php" class="btn logout">Esci</a>
                 </div>
             </aside>
