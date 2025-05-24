@@ -198,6 +198,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
     <!-- Spiegazione flusso 
+    Quando viene inviato il form (POST):
+- Fase di validazione dei campi, tramite query al DB,
+  in caso mostro errori (vuoto, non rispetta la forma, già presente...).
+  La pagine viene ricaricata mostrando gli errori, mantenendo i valori inseriti e rimuovendo la password. (rimosso 'value').
     
     $err = $errors['campo'] ?? '';
 – Prendo il messaggio d’errore (oppure stringa vuota se non esiste).
@@ -209,6 +213,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 – Il tag <small> è sempre display:block (dal CSS).
 – Se $err è vuoto, non c’è alcun testo e quindi non si vede niente.
 – Se c’è testo, lo vediamo in rosso sotto l’<input>.
+
+    Nel frattempo JS, durante la digitazione (input):
+- rimuove la class='error' e pulisce messaggio di errore presente.
+
+    Se tutto ok:
+- Imposta token 'show_success' che mostra messaggio nella pagina di login.
 -->
 
 </body>
